@@ -1,8 +1,36 @@
-<h1>Introduction to Front-end Development</h1>
+<!doctype html>
+<html>
+    <head>
+        <title>git-html</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+<h1 id="h1" onmouseover="izmeni();">Introduction to Front-end Development</h1>
 <p>A front-end developer architects and develops client part of websites and applications using web technologies (languages):</p>
-<p>Novi paragraf</p>
+
 <ul>
 <li style="color:rgb(0, 128, 0)">HTML
 <li style="color:red">CSS
 <li style="color:blue">JavaScript
 </ul>
+
+
+<script>
+        function izmeni(){
+            let h1 = document.querySelector("#h1");
+            h1.innerText = "Uvodjenje u  razvoj prednjeg dela";
+            h1.style.color = "red";
+            
+            if(h1.style.fontSize != "46pt"){
+               h1.style.fontSize = "46pt"
+            }else {
+                h1.style.fontSize = "26pt";
+                h1.innerText ="Introduction to Front-end Development";
+                h1.style.color = "black";
+
+            }
+
+        }
+</script>
+</body>
+ </html>
